@@ -29,6 +29,7 @@
         padding: 10px;
         background-color: #333;
         width: 100%;
+
         
         
         &-link{
@@ -39,17 +40,29 @@
             text-align: center;
         }
     }
+
+    @media (max-width: "800px"){
+        
+        .flex1__item2{
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                flex-direction: column;
+                width: 100%;
+            }
+
+    }
 }
 
 
 .flex2{
 
     display: flex;
-    border: 1px yellow solid;
+    //border: 1px yellow solid;
     flex-direction: row;
 
     &__item1{
-        border: 1px magenta solid;
+        //border: 1px magenta solid;
         display: flex;
         flex-direction: column;
         background-color: lightgray;
@@ -57,10 +70,95 @@
         padding-top: 1.75rem;
         padding-right: 1rem;
         padding-left: 1rem;
+        
+        &-about-head{
+            margin-bottom: 1rem;
+        }
+        &-about-photo{
+            margin-bottom: 1rem;
+        }
+        &-about-photo{
+            margin-bottom: 1rem;
+        }
+        &-about-p{
+            margin-bottom: 1rem;
+        }
+
+        &-more-head{
+            margin-bottom: 1rem;
+        }
+
+        &-more-p{
+            margin-bottom: 1rem;
+        }
+
     }
 
     &__item2{
-        border: 1px black solid;
+        ///border: 1px black solid;
         width: 75%;
+        display: flex;
+        flex-direction: column;
+        padding-top: 1.75rem;
+        padding-right: 1rem;
+        padding-left: 1rem;
+
+        &-element{
+           /// border: 1px red solid;
+
+            &-title{
+                margin-bottom: 1rem;
+            }
+
+            &-description{
+                margin-bottom: 1rem;
+            }
+
+            &-sub{
+                margin-bottom: 1rem;
+            }
+
+            &-p{
+                margin-bottom: 1rem;
+            }
+            
+            &-image2{
+                margin-bottom: 1rem;
+            }
+        }
+    }
+
+}
+
+@media (max-width: "800px"){
+        
+        .flex2{
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                flex-direction: column;
+                width: 100%;
+                &__item1{
+                    
+                    width: 100%;
+                }
+                
+                &__item2{
+                    width: 100%;
+                }
+            }
+
+    }
+
+.flex3{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    ///border: 1px blue solid;
+    height: 5.1rem;
+    background-color: hsl(0, 2%, 69%);
+    &__item{
+        align-self: center;
+        ///border: 1px red solid;
     }
 }
